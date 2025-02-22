@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="shortcut icon" href="./logo.22bf709605809177256c.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="socialicons">
+            <img src="./facebook.0d22b4d986cc357e30b7.png" alt="Facebook">
+            <img src="./instagram.1506b398fa46f19bb324.png" alt="Instagram">
+            <img src="./youtube.25bcb63515915fad0160.png"  alt="youtube">
+        </div>
+        <div class="logo">
+            <img src="./logo.22bf709605809177256c.png" alt="Logo">
+        </div>
+        <button class="studentportal">👩‍🎓 Student Portal</button>
+    </header>
+    <h1>Registration Form - Smit</h1>
+    <span class="span">Services - Education - Registration</span>
+    <nav class="navigation">
+        <a class="link" href="#">Registration</a>
+        <a class="link" href="#">Download Card</a>
+        <a class="link" href="#">Results</a>
+    </nav>
+    <hr>
+    <form class="form-container">
+        <div class="select-row">
+            <div class="select-group">
+                <label class="label" for="country">Select Country</label>
+                <select class="select" id="country">
+                    <option value="" disabled selected>Select country</option>
+                    <option value="turkey">Turkey</option>
+                    <option value="pakistan">Pakistan</option>
+                </select>
+            </div>
+
+            <div class="select-group">
+                <label class="label" for="city">Select City</label>
+                <select class="select" id="city">
+                    <option value="" disabled selected>Select city</option>
+                    <option value="istanbul">Istanbul</option>
+                    <option value="ankara">Ankara</option>
+                    <option value="karachi">Karachi</option>
+                    <option value="lahore">Lahore</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="select-row">
+            <div class="select-group">
+                <label class="label" for="proficiency">Select your computer proficiency</label>
+                <select class="select" id="proficiency">
+                    <option value="" disabled selected>Select proficiency</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+            </div>
+
+            <div class="select-group">
+                <label class="label" for="course">Select Course or Event</label>
+                <select class="select" id="course">
+                    <option value="" disabled selected>Select Course or Event</option>
+                    <option value="web-development">Web Development</option>
+                    <option value="python">Python</option>
+                    <option value="data-science">Data Science</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="input-row">
+            <div class="input-group">
+                <label class="label-name" for="first-name">First Name</label>
+                <input class="input" type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="input-group">
+                <label class="label-name" for="last-name">Last Name</label>
+                <input class="input" type="text" id="last-name" name="last-name" required>
+            </div>
+        </div>
+
+
+
+        <div class="input-row">
+            <div class="input-group">
+                <label class="label-name" for="email">Email</label>
+                <input class="input" type="text" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label class="label-name" for="phone">Phone</label>
+                <input class="input" type="text" id="phone" name="phone" required>
+            </div>
+
+            
+        </div>
+
+        <div class="input-row">
+            <div class="input-group">
+                <label class="label-name" for="cnic">CNIC</label>
+                <input class="input" type="text" id="CNIC" name="CNIC" required>
+            </div>
+            <div class="input-group">
+                <label class="label-name" for="father-cnic">Father's CNIC</label>
+                <input class="input" type="text" id="father-cnic" name="father-cnic" required>
+            </div>
+         </div>
+
+
+
+
+         <!-- Gender and DOB (Side by Side) -->
+<div class="select-row">
+    <div class="select-group">
+        <label class="label" for="gender">Select Gender</label>
+        <select class="select" id="gender">
+            <option value="" disabled selected>Select gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+    </div>
+    
+    <div class="input-group">
+        <label class="label-name" for="dob">Date of Birth</label>
+        <input class="input" type="date" id="dob" name="dob" required>
+    </div>
+</div>
+
+<!-- Address Field (Placed Below in a New Row) -->
+<div class="input-row">
+    <div class="input-group">
+        <label class="label-name" for="address">Address</label>
+        <input class="input" type="text" id="address" name="address" required>
+    </div>
+</div>
+
+<div class="select-row"> 
+    <div class="select-group">
+    <label class="label" for="qualification">Last Qualification</label>
+    <select class="select" id="qualification">
+        <option value="" disabled selected>qualification</option>
+        <option value="male">bachelor</option>
+        <option value="female">matric</option>
+    </select></div>
+</div>
+   
+
+<div class="select-row"> 
+    <div class="select-group">
+    <label class="label" for="laptop">Do you have laptop??</label>
+    <select class="select" id="laptop">
+        <option value="" disabled selected>laptop</option>
+        <option value="yes">yes</option>
+        <option value="NO">NO</option>
+    </select></div>
+</div>
+
+
+<!-- Picture Upload Section -->
+<div class="upload-container">
+    <label class="upload-label">Picture</label>
+    <div class="upload-box">
+        <input type="file" id="profile-picture" accept="image.png">
+        <span>+ Upload</span>
+    </div>
+    <p class="upload-instructions">
+        With white or blue background <br>
+        File size must be less than 1MB <br>
+        File type: jpg, jpeg, png <br>
+        Upload your recent passport-size picture <br>
+        Your face should be clearly visible without any glasses
+    </p>
+</div>
+
+<!-- Add Terms & Conditions -->
+<div class="terms-container">
+    <ol>
+        <li>I hereby, solemnly declare that the data and facts mentioned herein are true...</li>
+        <li>I hereby accept the responsibilities of good conduct...</li>
+        <li>Defiance will render my admission canceled...</li>
+        <li>Upon completion, I will complete the required project...</li>
+        <li>It's mandatory for female students to wear abaya/hijab in class.</li>
+    </ol>
+</div>
+
+<!-- Add reCAPTCHA -->
+<div class="captcha-container">
+    <input class="checkbox"  type="checkbox" id="captcha">
+    <label class="line"  for="captcha">I'm not a robot</label>
+   
+</div>
+
+<input type="submit" class="button">
+
+
+   
+
+   
+
+  
+    </form>
+</body>
+</html>
